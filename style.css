@@ -691,6 +691,9 @@ body.page .main-navigation {
     margin-right: auto;
     margin-left: auto;
   }
+  .site-branding-container {
+    margin-top: 50px;
+  }
 }
 
 /*--------------------------------------------------------------
