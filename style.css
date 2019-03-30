@@ -648,19 +648,30 @@ body.page .main-navigation {
     transition: -webkit-transform 1s;
     transition: transform 1s;
     transition: transform 1s, -webkit-transform 1s;
+    z-index: 3000;
   }
   .footer-navigation {
     background-color: #aaa;
     text-align: center;
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
     width: 100vw;
     height: 100vh;
-    display: block;
-    /*flex-direction: column;
-		justify-content: center;
-		overflow-x: hidden;
-		overflow-y: auto;*/
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: -100vw;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-transition: left 2s;
+    transition: left 2s;
   }
 }
 

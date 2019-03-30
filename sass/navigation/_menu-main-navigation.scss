@@ -542,19 +542,22 @@
 		cursor: pointer;
 		/*Effet de transition sur la rotation*/
 		transition: transform 1s;
+		z-index: 3000;
 	}
 	.footer-navigation{
 		background-color : #aaa;
 		text-align: center;
-		transform: translateX(-100%);
 		width: 100vw;
 		height: 100vh;
-		display: block;
-		//position: fixed;
-		/*flex-direction: column;
+		display: flex;
+		position: fixed;
+		top: 0;
+		left: -100vw;
+		flex-direction: column;
 		justify-content: center;
 		overflow-x: hidden;
-		overflow-y: auto;*/
+		overflow-y: auto;
+		transition: left 2s;
 	}
 }
 

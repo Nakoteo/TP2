@@ -54,9 +54,9 @@ function add_onload() {
 
         function translateMenu(){
         if(elmChecked.checked == false){
-                elmMenu.style.transform = "translateX(0%)";
+                elmMenu.style.left = "0";
             } else{
-                elmMenu.style.transform = "translateX(-100%)";
+                elmMenu.style.left = "-100vh";
             }
         }
      }; // test function
