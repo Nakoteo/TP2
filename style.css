@@ -683,7 +683,6 @@ body.page .main-navigation {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    font-size: 30px;
   }
   #menu-menu-1 li {
     border-bottom: 2px solid white;
@@ -1055,5 +1054,9 @@ body.page .main-navigation {
 .attachment-full {
   -webkit-box-shadow: 4px 4px 10px black;
           box-shadow: 4px 4px 10px black;
+}
+
+#menu-menu-1 {
+  font-size: 30px;
 }
 /*# sourceMappingURL=style.css.map */
