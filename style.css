@@ -597,6 +597,10 @@ body.page .main-navigation {
 }
 
 /* Menu burger */
+.footer-navigation {
+  display: none;
+}
+
 .boutonBurger {
   display: none;
 }
@@ -605,7 +609,7 @@ body.page .main-navigation {
   display: none;
 }
 
-#chkBoutonBurger:checked ~ .global {
+#chkBoutonBurger:checked ~ .footer-navigation {
   -webkit-transform: translateX(0%);
           transform: translateX(0%);
 }
@@ -634,27 +638,7 @@ body.page .main-navigation {
             flex-direction: column;
   }
   #site-navigation {
-    background-color: #aaa;
-    text-align: center;
-    /*Pour cet exemple, on fixe la largeur du menu à 100% ou 100vw*/
-    width: 50vw;
-    /*Propriété comme item flex - ne peut rétrécir*/
-    -webkit-box-flex: 1;
-        -ms-flex: 1 0 50%;
-            flex: 1 0 50%;
-    /*Contexte flex en colonne pour ses enfants*/
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    overflow-x: hidden;
-    overflow-y: auto;
+    display: none;
   }
   .boutonBurger {
     background: -webkit-gradient(linear, left top, left bottom, from(#E84545), color-stop(20%, #E84545), color-stop(20%, transparent), color-stop(40%, transparent), color-stop(40%, #E84545), color-stop(60%, #E84545), color-stop(60%, transparent), color-stop(80%, transparent), color-stop(80%, #E84545), to(#E84545));
@@ -669,6 +653,22 @@ body.page .main-navigation {
     transition: -webkit-transform 1s;
     transition: transform 1s;
     transition: transform 1s, -webkit-transform 1s;
+  }
+  .footer-navigation {
+    background-color: #aaa;
+    text-align: center;
+    height: 100vh;
+    width: 100vh;
+    -webkit-transform: translate(-100%);
+            transform: translate(-100%);
+    /*Pour cet exemple, on fixe la largeur du menu à 100% ou 100vw*/
+    /*Propriété comme item flex - ne peut rétrécir*/
+    /*Contexte flex en colonne pour ses enfants*/
+    /*display: flex;
+		flex-direction: column;
+		justify-content: center;
+		overflow-x: hidden;
+		overflow-y: auto;*/
   }
 }
 
