@@ -2,7 +2,6 @@
     from {
         transform: translateX(-100vh);
         opacity: 0;
-
     }
  
     100% {
@@ -66,7 +65,7 @@
 
 .anim1 {
     transform-origin: top center;
-    animation: anim1 2s, anim2 1s 2s  ;
+    animation: anim1 2s;
 
     animation-fill-mode: forwards;
     
@@ -75,6 +74,5 @@
 .anim3 {
     // animation-fill-mode: forwards;
     transform-origin: top center;
-    animation: anim3 1s forwards, anim2 1s 1s forwards;
-    animation-timing-function: cubic-bezier(1, .01, .91, 1.7);
+    animation: anim1 1s 1s forwards;
 }
