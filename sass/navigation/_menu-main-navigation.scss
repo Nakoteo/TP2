@@ -543,9 +543,10 @@
 		/*Effet de transition sur la rotation*/
 		transition: transform 1s;
 		z-index: 3000;
+		position: fixed;
 	}
 	.footer-navigation{
-		background-color : #aaa;
+		background-color : rgba(0, 0, 0, 0.842);
 		text-align: center;
 		width: 100vw;
 		height: 100vh;
@@ -558,6 +559,15 @@
 		overflow-x: hidden;
 		overflow-y: auto;
 		transition: left 2s;
+		color: white;
+	}
+	#menu-menu-1{
+		display: flex;
+		flex-direction: column;
+		font-size: 30px;
+		li{
+			border-bottom: 2px solid white;
+		}
 	}
 }
 
