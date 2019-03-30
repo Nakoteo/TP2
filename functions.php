@@ -20,6 +20,12 @@ function my_theme_enqueue_styles() {
 	array(),
 	filemtime( get_stylesheet_directory() . '/js/animation.js' )
 );
+wp_enqueue_script(
+	'menu',
+	get_stylesheet_directory_uri() . '/js/menu.js',
+	array(),
+	filemtime( get_stylesheet_directory() . '/js/menu.js' )
+);
 }
 
 /* Permet d'adapter la requête principale avant qu'elle ne s'exécute */ 

@@ -526,7 +526,7 @@
 	background-color: red;
 }
 
-@include media(tablet){
+@include media(mobile){
 	#page{
 		max-width: 100vw;
 		flex: 1 0 100vw;
