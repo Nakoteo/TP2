@@ -614,12 +614,6 @@ body.page .main-navigation {
           transform: rotate(90deg);
 }
 
-#chkBoutonBurger:checked ~ .footer-navigation {
-  -webkit-transform: translateX(0%);
-          transform: translateX(0%);
-  background-color: red;
-}
-
 @media only screen and (max-width: 600px) {
   #page {
     max-width: 100vw;

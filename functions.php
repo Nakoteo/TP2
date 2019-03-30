@@ -19,13 +19,8 @@ function my_theme_enqueue_styles() {
 	get_stylesheet_directory_uri() . '/js/animation.js',
 	array(),
 	filemtime( get_stylesheet_directory() . '/js/animation.js' )
-);
-wp_enqueue_script(
-	'menu',
-	get_stylesheet_directory_uri() . '/js/menu.js',
-	array(),
-	filemtime( get_stylesheet_directory() . '/js/menu.js' )
-);
+    );
+    
 }
 
 /* Permet d'adapter la requête principale avant qu'elle ne s'exécute */ 
@@ -38,6 +33,38 @@ function extraire_cours( $query ) {
    }
 }
 add_action( 'pre_get_posts', 'extraire_cours' );
+
+function add_onload() {
+    ?>
+    <script type="text/javascript">
+    taFonction = function() { 
+
+        /*********************************************************************/
+        /*J'AI ESSAYÉ DE LE METTRE DANS UN FICHIER ET ÇA NE FONCTIONNAIT PAS */
+        /*                   ALORS VOICI LA SOLUTION                         */
+        /*********************************************************************/
+
+        var elmBurger = document.getElementsByClassName("boutonBurger")[0];
+        var elmMenu = document.getElementsByClassName("footer-navigation")[0];
+        var elmChecked = document.getElementById("chkBoutonBurger");
+
+        console.log(elmBurger);
+
+        elmBurger.addEventListener("click", translateMenu);
+
+        function translateMenu(){
+        if(elmChecked.checked == false){
+                elmMenu.style.transform = "translateX(0%)";
+            } else{
+                elmMenu.style.transform = "translateX(-100%)";
+            }
+        }
+     }; // test function
+    document.getElementsByTagName('body')[0].onload = taFonction; // body.onload
+    </script>
+    <?php
+}
+add_action( 'wp_footer', 'add_onload' );
 
 ///////////////////////////////////////////////////////////
 /*
@@ -78,6 +105,5 @@ function acf_set_featured_image($post_id){
     return $value;
 }
 */
-
 
 ?>

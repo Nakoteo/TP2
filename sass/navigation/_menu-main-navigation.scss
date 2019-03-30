@@ -521,10 +521,6 @@
 #chkBoutonBurger:checked~.boutonBurger {
 	transform: rotate(90deg);
 }
-#chkBoutonBurger:checked~.footer-navigation {
-	transform: translateX(0%);
-	background-color: red;
-}
 
 @include media(mobile){
 	#page{
