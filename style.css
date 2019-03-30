@@ -898,6 +898,10 @@ body.page .main-navigation {
   border: 5px solid #359ce0;
 }
 
+body {
+  background-color: #e6e6e6;
+}
+
 @-webkit-keyframes anim1 {
   from {
     -webkit-transform: translateX(-100vh);
