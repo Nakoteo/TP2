@@ -687,6 +687,9 @@ body.page .main-navigation {
   }
   #menu-menu-1 li {
     border-bottom: 2px solid white;
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
