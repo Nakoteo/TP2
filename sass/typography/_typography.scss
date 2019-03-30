@@ -1,3 +1,8 @@
 #menu-menu-1{
     font-size: 30px;
 }
+@include media(mobile){
+	.site-branding p{
+        font-size: 3vw;
+    }
+}

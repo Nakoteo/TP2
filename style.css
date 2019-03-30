@@ -1059,4 +1059,10 @@ body.page .main-navigation {
 #menu-menu-1 {
   font-size: 30px;
 }
+
+@media only screen and (max-width: 600px) {
+  .site-branding p {
+    font-size: 3vw;
+  }
+}
 /*# sourceMappingURL=style.css.map */
