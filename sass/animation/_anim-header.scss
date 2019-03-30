@@ -1,12 +1,13 @@
 @keyframes anim1 {
     from {
-        transform: translateY(-100vh)  rotateX(0deg);
-         animation-timing-function: cubic-bezier(1, .01, .91, 1.7);
+        transform: translateX(-100vh);
+        opacity: 0;
+
     }
  
     100% {
-        transform: translateY(0) rotateX(0deg); 
-        // animation-timing-function: cubic-bezier(.89, .17, 1, .31);
+        transform: translateX(0); 
+        opacity: 1;
     }
 }
 

@@ -896,27 +896,27 @@ body.page .main-navigation {
 
 @-webkit-keyframes anim1 {
   from {
-    -webkit-transform: translateY(-100vh) rotateX(0deg);
-            transform: translateY(-100vh) rotateX(0deg);
-    -webkit-animation-timing-function: cubic-bezier(1, 0.01, 0.91, 1.7);
-            animation-timing-function: cubic-bezier(1, 0.01, 0.91, 1.7);
+    -webkit-transform: translateX(-100vh);
+            transform: translateX(-100vh);
+    opacity: 0;
   }
   100% {
-    -webkit-transform: translateY(0) rotateX(0deg);
-            transform: translateY(0) rotateX(0deg);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
   }
 }
 
 @keyframes anim1 {
   from {
-    -webkit-transform: translateY(-100vh) rotateX(0deg);
-            transform: translateY(-100vh) rotateX(0deg);
-    -webkit-animation-timing-function: cubic-bezier(1, 0.01, 0.91, 1.7);
-            animation-timing-function: cubic-bezier(1, 0.01, 0.91, 1.7);
+    -webkit-transform: translateX(-100vh);
+            transform: translateX(-100vh);
+    opacity: 0;
   }
   100% {
-    -webkit-transform: translateY(0) rotateX(0deg);
-            transform: translateY(0) rotateX(0deg);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
   }
 }
 
