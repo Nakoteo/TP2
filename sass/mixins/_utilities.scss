@@ -4,7 +4,7 @@ http: //krasimirtsonev.com/blog/article/SASS-content-directive-is-a-wonderful-th
 */
 @mixin media($res) {
     @if mobile==$res {
-        @media only screen and (min-width: $mobile_width) {
+        @media only screen and (max-width: $mobile_width) {
             @content;
         }
     }
