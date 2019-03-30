@@ -564,6 +564,10 @@ body.page .main-navigation {
   display: none;
 }
 
+.site-navigation {
+  opacity: 0;
+}
+
 /* Menu animation */
 @-webkit-keyframes slide_in_right {
   100% {
@@ -939,10 +943,6 @@ body.page .main-navigation {
           transform-origin: top center;
   -webkit-animation: anim1 1s 1s forwards;
           animation: anim1 1s 1s forwards;
-}
-
-.site-navigation {
-  opacity: 0;
 }
 
 .attachment-full {

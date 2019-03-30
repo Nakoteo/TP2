@@ -17,17 +17,11 @@
 .anim1 {
     transform-origin: top center;
     animation: anim1 2s;
-
     animation-fill-mode: forwards;
     
 }
 
 .anim3 {
-    // animation-fill-mode: forwards;
     transform-origin: top center;
     animation: anim1 1s 1s forwards;
-}
-
-.site-navigation{
-    opacity: 0;
 }
